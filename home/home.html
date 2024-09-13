@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="logo"> <img url("https://i.postimg.cc/sxnkLRr1/agewell-logo.png")> </div>
+        <ul class="links">
+        <li><a href="hero">Home</a></11>
+        <li><a href="about">About</a></1i>
+        <li><a href="services">Services</a></1i>
+        <li><a href="contact">Contact</a></1i>
+        </ul>
+        <a href="*" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+            <i class='bx bx-menu'></i>
+        </div>
+        </div>
+        <div class="dropdown_menu ">
+            <li><a href="hero">Home</a></11>
+            <li><a href="about">About</a></1i>
+            <li><a href="services">Services</a></1i>
+            <li><a href="contact">Contact</a></1i>
+            <li><a href="*" class="action_btn">Get Started</a></li>
+        </div>
+        </header>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon=document.querySelector('.toggle_btn i')
+            const dropDownMenu=document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function(){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtnIcon.classList=isOpen
+                    ?'bx bx-x'
+                    :'bx bx-menu'
+            }
+        </script>
+</body>
+</html>
